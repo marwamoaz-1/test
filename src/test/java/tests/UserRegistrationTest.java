@@ -18,7 +18,7 @@ public class UserRegistrationTest extends TestBase{
 		homeobj=new HomePage(driver);
 		homeobj.openRegistrationPage();
 		registerobj=new UserRegistrationPage(driver);
-		registerobj.userRegistration("marwa", "moaz", "test010100001@gmail.com", "12345678");
+		registerobj.userRegistration("marwa", "moaz", "test01010000201@gmail.com", "12345678");
         Assert.assertTrue(registerobj.successMessage.getText().contains("Your registration completed"));
 
 	}
@@ -34,7 +34,7 @@ public class UserRegistrationTest extends TestBase{
 	{
 		homeobj.openLoginPage();
 		loginObj=new LoginPage(driver);
-		loginObj.userLogin("testemail1238@gmail.com", "12345678");
+		loginObj.userLogin("test01010000201@gmail.com", "12345678");
 		Assert.assertTrue(registerobj.logoutLink.isDisplayed());
 	}
 
